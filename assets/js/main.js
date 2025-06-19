@@ -14,10 +14,7 @@ for (const value of data) {
 	console.log(value)
 }
 
-let suma = 0
-for (const value of data) {
-	suma += value
-}
+const sum = data.values().reduce((accum, v) => accum + v)
 console.log(suma)
 
 data.delete(2)
